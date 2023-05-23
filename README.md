@@ -66,5 +66,109 @@ README.md
 yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
 $
 
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ touch privado.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ ls
+README.md  privado.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ mkdir privada
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ ls
+README.md  privada/  privado.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        privado.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git add .
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   privado.txt
+
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ ls
+README.md  privada/  privado.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git commit -m "Se crea archivo privado.txt y carpeta privada"
+[main dab058e] Se crea archivo privado.txt y carpeta privada
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 privado.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 7 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 297 bytes | 297.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/YuneidisLS/devjumpers.git
+   be8dd8a..dab058e  main -> main
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ ls
+README.md  privada/  privado.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git add privada
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ ls
+README.md  privada/  privado.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git add privada
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git commit -m "se agrega carpeta privada"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ ls
+README.md  privada/  privado.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ status
+bash: status: command not found
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ cd privada
 
 
