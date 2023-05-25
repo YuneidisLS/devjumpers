@@ -556,3 +556,8 @@ $ git push origin --delete v0.2
 To https://github.com/YuneidisLS/devjumpers.git
  - [deleted]         v0.2
 
+| Nombre               | GitHub                          |
+| -------------------- | ------------------------------- |
+| Matias Albujar       | [Matias-lab-ARB](https://github.com/Matias-lab-ARB)     |
+| Francisco Abramoff   | [Fran1923](https://github.com/Fran1923) |
+
