@@ -221,3 +221,110 @@ Writing objects: 100% (4/4), 1.31 KiB | 1.31 MiB/s, done.
 Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/YuneidisLS/devjumpers.git
    dab058e..bab5ac2  main -> main
+
+
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop
+$ cd EjercicioFinal-Git-GitHub
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub
+$ cd devjumpers
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ ls
+README.md  privada/  privado.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ touch 1.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git branch v0.2
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git checkout v0.2
+Switched to branch 'v0.2'
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (v0.2)
+$ ^C
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (v0.2)
+$ touch 2.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (v0.2)
+$ git status
+On branch v0.2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.txt
+        2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (v0.2)
+$ git add .
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (v0.2)
+$ git status
+On branch v0.2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   1.txt
+        new file:   2.txt
+
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (v0.2)
+$ git commit -m "Se creaa rama, y ficheros 1.txt,2.txt"
+[v0.2 82dc09e] Se creaa rama, y ficheros 1.txt,2.txt
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.txt
+ create mode 100644 2.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (v0.2)
+$ git push -u origin v0.2
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 7 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 327 bytes | 327.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'v0.2' on GitHub by visiting:
+remote:      https://github.com/YuneidisLS/devjumpers/pull/new/v0.2
+remote:
+To https://github.com/YuneidisLS/devjumpers.git
+ * [new branch]      v0.2 -> v0.2
+branch 'v0.2' set up to track 'origin/v0.2'.
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (v0.2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git merge v0.2
+Updating cb5dd0d..82dc09e
+Fast-forward
+ 1.txt | 0
+ 2.txt | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.txt
+ create mode 100644 2.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ ls
+1.txt  2.txt  README.md  privada/  privado.txt
+
+yuneidis.serna_arbus@N-368 MINGW64 ~/Desktop/EjercicioFinal-Git-GitHub/devjumpers (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/YuneidisLS/devjumpers.git
+   cb5dd0d..82dc09e  main -> main
+
