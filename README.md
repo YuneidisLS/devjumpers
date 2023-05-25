@@ -327,4 +327,20 @@ $ git push
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/YuneidisLS/devjumpers.git
    cb5dd0d..82dc09e  main -> main
-
+   
+$ git status
+$ git add .
+$ git commit -m"Se pone texto en el archivo1.txt"
+$ git checkout v0.2
+Aca vamos otra vez al archio 1.txt y agregamos un adios 
+$ git add .
+$ git commit -m"se agrefo texto en el archico 1.txt"
+$ git checkout main
+$ git merge v0.2
+luego aca nos sale un conflicto vamos al archico 1.txt y lo abrimos con visual 
+$ git branch --merge
+$ git branch --no-merge
+$ git add .
+$ git commit -m "conflictos resueltos"
+$ git merge
+$ git push
